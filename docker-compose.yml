@@ -1,0 +1,9 @@
+services:
+  cloud_ip_receiver:
+    image: cloud-ip-receiver:latest
+    build: .
+    ports:
+      - "5000:5000"
+    environment:
+      FLASK_APP: cloud_ip_receiver.py
+    restart: always
