@@ -4,6 +4,8 @@ services:
     build: .
     ports:
       - "5000:5000"
+    volumes:
+      - ./last_ip.txt:/app/last_ip.txt      
     environment:
       FLASK_APP: cloud_ip_receiver.py
     restart: always
