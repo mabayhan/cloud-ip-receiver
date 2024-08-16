@@ -32,7 +32,8 @@ def update_ip():
 def show_last_ip():
     last_ip = load_last_ip()
     if last_ip:
-        return jsonify({"last_ip": last_ip}), 200
+        # return jsonify({"last_ip": last_ip}), 200
+        return last_ip
     return jsonify({"message": "No IP received yet"}), 404
 
 

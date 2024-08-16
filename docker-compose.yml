@@ -3,7 +3,7 @@ services:
     image: cloud-ip-receiver:latest
     build: .
     ports:
-      - "5000:5000"
+      - "5001:5000"
     volumes:
       - ./last_ip.txt:/app/last_ip.txt      
     environment:
